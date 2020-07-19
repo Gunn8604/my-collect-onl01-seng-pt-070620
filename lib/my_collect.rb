@@ -14,7 +14,6 @@ def my_collect(array)
       i = i + 1 
     end
       
-    end
   end
   temp_array
 end
