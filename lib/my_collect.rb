@@ -6,15 +6,16 @@ def my_collect(array)
   temp_array = []
   while i < array.size
     if array[i].include?(" ")
-      temp_array.push()
+      temp_array.push(yield(array[i].split(" ").first))
       #execute code
       i = i + 1
     else 
-      temp_array.push()
+      temp_array.push(yield(array[i].upcase))
       i = i + 1 
     end
       
     end
   end
+  temp_array
 end
 
